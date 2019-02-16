@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/WrapHearder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorwhite"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_marginTopPercent="5%"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/relativeLayout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:background="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                app:layout_marginLeftPercent="5%"
+                app:layout_marginRightPercent="5%"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvAlertTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorwhite"
+                    android:text="Alert Title:"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/icClose"
+                    android:layout_width="15sp"
+                    android:layout_height="15sp"
+                    android:layout_marginRight="10sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_close" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/WrapMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WrapHearder"
+        android:layout_centerHorizontal="true"
+        android:padding="20sp"
+        android:background="@color/colorwhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvAlertMsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:textAlignment="center"
+            android:text="" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/WrapBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/WrapMsg"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorwhite"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="match_parent"
+            android:layout_height="35sp"
+            android:layout_below="@+id/WrapTable"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:layout_marginBottom="20sp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorwhite"
+            android:textAllCaps="false"
+            android:text="@string/txt_Done"/>
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
